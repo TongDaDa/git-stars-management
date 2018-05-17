@@ -1,0 +1,52 @@
+{
+  "name": "扩展名称",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "扩展描述",
+  "icons" : {
+    "16" : "./assets/img/icon.jpg",
+    "48" : "./assets/img/icon.jpg",
+    "128" : "./assets/img/icon.jpg"
+  },
+  "browser_action": {
+    "default_title": "日报工具",
+    "default_icon": "./assets/img/icon.jpg",
+    "default_popup": "index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://www.google.com/*"],
+      "css": ["./custom.css"],
+      "js": [
+        "./custom.js"
+      ],
+      "all_frames": true,
+      "run_at": "document_idle"
+    }
+  ],
+  "commands": {
+    "toggle-feature-foo": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y",
+        "mac": "Command+I"
+      },
+      "description": "Toggle feature foo"
+    },
+    "_execute_browser_action": {
+      "suggested_key": {
+        "windows": "Ctrl+Shift+Y",
+        "mac": "Command+O",
+        "chromeos": "Ctrl+Shift+U",
+        "linux": "Ctrl+Shift+J"
+      }
+    }
+  },
+  "permissions": [
+    "cookies",
+    "notifications",
+    "storage",
+    "history",
+    "windows",
+    "tabs"
+  ]
+}
