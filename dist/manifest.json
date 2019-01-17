@@ -4,13 +4,13 @@
   "manifest_version": 2,
   "description": "扩展描述",
   "icons" : {
-    "16" : "./assets/img/icon.jpg",
-    "48" : "./assets/img/icon.jpg",
-    "128" : "./assets/img/icon.jpg"
+    "16" : "./assets/img/gitIcon.png",
+    "48" : "./assets/img/gitIcon.png",
+    "128" : "./assets/img/gitIcon.png"
   },
   "browser_action": {
-    "default_title": "日报工具",
-    "default_icon": "./assets/img/icon.jpg",
+    "default_title": "github收藏夹",
+    "default_icon": "./assets/img/gitIcon.png",
     "default_popup": "index.html"
   },
   "content_scripts": [

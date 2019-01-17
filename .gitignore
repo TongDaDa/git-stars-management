@@ -1,0 +1,11 @@
+.DS_Store
+*.log
+doc/*.html
+package-lock.json
+node_modules
+./index.js
+./lib/index.js
+.vscode
+jquery.js
+jquery.min.js
+./index.html

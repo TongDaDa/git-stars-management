@@ -1,0 +1,6 @@
+test/*
+dist/*
+es/
+dev/
+flow-typed
+postcss.config.js
